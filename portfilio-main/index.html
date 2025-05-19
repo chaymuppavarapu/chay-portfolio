@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saichaitanya - Software Engineer</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #020024;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #12123e;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .left {
+      font-size: 2rem;
+      color: #ffffff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #8671f1;
+    }
+
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 90px;
+      min-height: 100vh;
+      padding-top: 80px;
+    }
+
+    .firstsection>div {
+      width: 45%;
+    }
+
+    .leftsection {
+      font-size: 1.8rem;
+      margin: 70px;
+    }
+
+    .rightsection img {
+      width: 80%;
+      margin: 50px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .purple {
+      color: #8671f1;
+    }
+
+    #element {
+      color: #8671f1;
+    }
+
+    .cta-buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .cta-button {
+      padding: 12px 24px;
+      background: #8671f1;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background: #6b4fd8;
+      transform: translateY(-2px);
+    }
+
+    .cta-button.secondary {
+      background: transparent;
+      border: 2px solid #8671f1;
+    }
+
+    .cta-button.secondary:hover {
+      background: rgba(134, 113, 241, 0.1);
+    }
+
+    .social-links {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #8671f1;
+    }
+
+    @media (max-width: 768px) {
+      .firstsection {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .firstsection>div {
+        width: 90%;
+      }
+
+      .rightsection img {
+        width: 60%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Saichaitanya</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        <h1>Hi, I'm <span class="purple">Saichaitanya</span></h1>
+        <div style="margin: 20px 0; font-size: 1.4rem;">
+          Software Engineer & Full Stack Developer
+        </div>
+        <div style="margin-bottom: 20px; font-size: 1.1rem; color: #9c97f1;">
+          I build modern web applications with a focus on
+          <span id="element"></span>
+        </div>
+        <div class="cta-buttons">
+          <a href="projects.html" class="cta-button">View Projects</a>
+          <a href="contact.html" class="cta-button secondary">Contact Me</a>
+          <a href="chay_resume.pdf" class="cta-button secondary">View Resume</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/chaymuppavarapu/portfilio" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="PngItem_1127587.png" alt="Developer Illustration">
+      </div>
+    </section>
+    <hr>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['user experience', 'scalable architecture', 'clean code', 'modern technologies'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>

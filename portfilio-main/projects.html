@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Saichaitanya</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #020024;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #12123e;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .left {
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8671f1;
+        }
+
+        .projects {
+            padding: 100px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project {
+            background-color: #12123e;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(134, 113, 241, 0.1);
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: #8671f1;
+        }
+
+        .project h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #8671f1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-type {
+            font-size: 0.9rem;
+            color: #9c97f1;
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .tech-tag {
+            background: rgba(134, 113, 241, 0.1);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #8671f1;
+        }
+
+        .project-description {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .key-features {
+            margin-top: 20px;
+        }
+
+        .key-features h3 {
+            color: #8671f1;
+            margin-bottom: 10px;
+        }
+
+        .key-features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .key-features li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .key-features li:before {
+            content: "•";
+            color: #8671f1;
+            position: absolute;
+            left: 0;
+        }
+
+        .future-project {
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .future-project::before {
+            content: "Future Project";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #8671f1;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            transform: rotate(15deg);
+        }
+
+        .github-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(134, 113, 241, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(134, 113, 241, 0.2);
+        }
+
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: #8671f1;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .github-link:hover {
+            background: #6b4fd8;
+            transform: translateY(-2px);
+        }
+
+        .github-link svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 768px) {
+            .projects {
+                padding: 80px 15px 15px;
+            }
+
+            .project {
+                padding: 20px;
+            }
+
+            .project h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">Saichaitanya</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="projects">
+        <div class="github-section">
+            <h2>View My Projects on GitHub</h2>
+            <p>Check out my complete portfolio and project source code on GitHub</p>
+            <a href="https://github.com/chaymuppavarapu/portfilio" target="_blank" class="github-link">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View on GitHub
+            </a>
+        </div>
+
+        <div class="project">
+            <h2>🚗 EasyWay – Smart Carpooling & Premium Mobility</h2>
+            <div class="project-type">Web & Mobile App</div>
+            <div class="tech-stack">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Google Maps API</span>
+                <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="project-description">
+                <p>EasyWay is a modern carpooling application designed to simplify urban commuting by connecting passengers with drivers for shared rides. Unlike traditional carpooling platforms, EasyWay offers a premium home pickup feature where verified drivers can pick up passengers directly from their doorstep, ensuring a seamless, safe, and convenient experience. This innovation is aimed at professionals, students, and elderly users who value door-to-door service.</p>
+            </div>
+            <div class="key-features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Live ride tracking and route planning</li>
+                    <li>Real-time driver/passenger matching</li>
+                    <li>Premium pickup mode (driver comes to your home)</li>
+                    <li>Secure payment and rating system</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>📊 YouTube Trending Visualizer – DWDM Analytics Tool</h2>
+            <div class="project-type">Data Analysis & Visualization Tool</div>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">YouTube Data API</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Plotly</span>
+            </div>
+            <div class="project-description">
+                <p>This project was built as part of the DWDM (Data Warehousing & Data Mining) academic module. The tool fetches and visualizes trending YouTube videos for a selected country or region in real-time using the YouTube Data API. It helps users understand what type of content is currently popular, segmented by category, views, likes, and upload frequency.</p>
+            </div>
+            <div class="key-features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Select country/region to filter trending videos</li>
+                    <li>Real-time API-based data extraction</li>
+                    <li>Visual dashboards built using Streamlit and Plotly</li>
+                    <li>Interactive filtering by category, keyword, and channel</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project future-project">
+            <h2>💸 UniPay – Shared Wallet for Group Expenses</h2>
+            <div class="project-type">Fintech / Group Payment Platform</div>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">UPI Integration</span>
+                <span class="tech-tag">JWT Auth</span>
+            </div>
+            <div class="project-description">
+                <p>UniPay is an upcoming shared digital wallet solution that enables users to manage and split group expenses such as trips, events, or subscriptions. The wallet is admin-controlled, allowing the creator to add/remove members via phone number linked to their UPI ID. Members can track balances, contribute funds, and manage payouts with full transparency.</p>
+            </div>
+            <div class="key-features">
+                <h3>Planned Features</h3>
+                <ul>
+                    <li>Admin-controlled member access</li>
+                    <li>Real-time UPI-based transactions</li>
+                    <li>Balance tracking and expense history</li>
+                    <li>Multi-group wallet support with secure authentication</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
