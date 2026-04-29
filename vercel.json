@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/portfilio-main/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/:path",
+      "destination": "/portfilio-main/:path",
+      "permanent": false
+    }
+  ]
+}
