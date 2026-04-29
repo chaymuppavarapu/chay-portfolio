@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sai Chaitanya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            gap: 18px;
+        }
+        .project {
+            padding: 22px;
+        }
+        .project h2 {
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+        }
+        .project p {
+            color: var(--muted);
+            margin-top: 10px;
+        }
+        .meta {
+            color: #d6dcff;
+            font-size: 0.92rem;
+            margin-bottom: 12px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .points {
+            margin-top: 14px;
+            padding-left: 20px;
+            color: var(--muted);
+        }
+        .points li { margin-bottom: 6px; }
+        .banner {
+            padding: 24px;
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-wrap">
+            <div class="brand">Sai Chaitanya</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-subtitle">
+            Selected work that reflects my problem-solving approach, engineering fundamentals, and execution.
+        </p>
+
+        <section class="card banner">
+            <p>Want more? Explore additional repositories and source code on GitHub.</p>
+            <a class="btn btn-primary" href="https://github.com/chaymuppavarapu/portfilio" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+        </section>
+
+        <section class="projects-grid">
+            <article class="card project">
+                <h2>EasyWay - Smart Carpooling and Premium Mobility</h2>
+                <div class="meta">Web and Mobile Application</div>
+                <div class="tags">
+                    <span class="chip">React Native</span><span class="chip">Node.js</span><span class="chip">MongoDB</span><span class="chip">Google Maps API</span><span class="chip">Firebase</span>
+                </div>
+                <p>
+                    A mobility platform that connects passengers with verified drivers for shared rides while providing premium doorstep pickup.
+                </p>
+                <ul class="points">
+                    <li>Live route tracking and journey planning</li>
+                    <li>Real-time matching between drivers and passengers</li>
+                    <li>Secure payment flow with trust-focused rating system</li>
+                </ul>
+            </article>
+
+            <article class="card project">
+                <h2>YouTube Trending Visualizer - DWDM Analytics Tool</h2>
+                <div class="meta">Data Analysis and Visualization</div>
+                <div class="tags">
+                    <span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Pandas</span><span class="chip">Plotly</span><span class="chip">YouTube Data API</span>
+                </div>
+                <p>
+                    A DWDM academic analytics tool that fetches trending YouTube data by region and visualizes category-level trends.
+                </p>
+                <ul class="points">
+                    <li>Country-level filters for targeted trend discovery</li>
+                    <li>Interactive charts for views, likes, and upload patterns</li>
+                    <li>Live API-backed dashboards with user-driven filtering</li>
+                </ul>
+            </article>
+
+            <article class="card project">
+                <h2>UniPay - Shared Wallet for Group Expenses (In Progress)</h2>
+                <div class="meta">Fintech Concept</div>
+                <div class="tags">
+                    <span class="chip">React</span><span class="chip">Node.js</span><span class="chip">MongoDB</span><span class="chip">UPI</span><span class="chip">JWT</span>
+                </div>
+                <p>
+                    A shared wallet concept for trips and events, with transparent group balance management and controlled access.
+                </p>
+                <ul class="points">
+                    <li>Admin-managed member onboarding</li>
+                    <li>Expense history and clear balance breakdowns</li>
+                    <li>Secure authentication and multi-group support</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Sai Chaitanya • Built with HTML and CSS
+    </footer>
+</body>
+</html>

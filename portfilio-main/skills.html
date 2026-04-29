@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Sai Chaitanya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .skill-card {
+            padding: 18px;
+        }
+        .skill-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 12px;
+        }
+        .skill-name {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        .skill-level {
+            font-size: 0.84rem;
+            color: #d6dcff;
+            border: 1px solid var(--border);
+            padding: 4px 8px;
+            border-radius: 99px;
+        }
+        .bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .bar span {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), #55c3ff);
+        }
+        .groups {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-wrap">
+            <div class="brand">Sai Chaitanya</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Technical Skills</h1>
+        <p class="page-subtitle">
+            A practical toolkit spanning programming, web development, and modern software engineering workflows.
+        </p>
+
+        <section class="grid">
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">HTML/CSS</span><span class="skill-level">Advanced</span></div>
+                <div class="bar"><span style="width: 90%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar"><span style="width: 78%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">Node.js</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar"><span style="width: 75%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">React</span><span class="skill-level">Working Knowledge</span></div>
+                <div class="bar"><span style="width: 68%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">Core Web Vitals Awareness</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar"><span style="width: 72%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">SEO Fundamentals</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar"><span style="width: 69%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">Java</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar"><span style="width: 74%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">Git/GitHub</span><span class="skill-level">Intermediate</span></div>
+                <div class="bar"><span style="width: 78%"></span></div>
+            </article>
+            <article class="card skill-card">
+                <div class="skill-top"><span class="skill-name">AI-Assisted Development</span><span class="skill-level">Advanced</span></div>
+                <div class="bar"><span style="width: 86%"></span></div>
+            </article>
+        </section>
+
+        <section class="groups">
+            <span class="chip">Problem Solving</span>
+            <span class="chip">REST API Integration</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">Debugging</span>
+            <span class="chip">Cursor</span>
+            <span class="chip">ChatGPT</span>
+            <span class="chip">Team Collaboration</span>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Sai Chaitanya • Built with HTML and CSS
+    </footer>
+</body>
+</html>
